@@ -28,7 +28,7 @@ public class ArrayStack<T> implements StackInterface<T> {
     @Override
     public T pop() throws EmptyStackException {
         if(isEmpty()) throw new EmptyStackException();
-        return array[topIndex--];
+        return array[--topIndex];
     }
 
     @Override
